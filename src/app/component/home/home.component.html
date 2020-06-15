@@ -1,27 +1,54 @@
+<app-banner></app-banner>
+<div class="container">
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-md-6"> 
+            <div class="card img-fluid" style="width:500px">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2018/04/29/21/27/nature-3361174__340.jpg" alt="Card image" style="width:100%">
+            <div class="card-img-overlay">
+                <a href="#" class="btn btn-success" id="bouton">Buy Now</a><br><br>
+                <div class="card-title" style="text-align: right;"><span class="price">John Doe</span></div>
+              <div class="title"><h5 class="card-title">un texte de votre choix</h5></div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+          </div> 
+        </div>
+        <div class="col-md-6"> 
+            <div class="card img-fluid" style="width:500px">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2018/04/29/21/27/nature-3361174__340.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+          </div> 
+        </div>
+    </div>
 
-<div class="container d-flex justify-content-center mt-50 mb-50">
-  <div class="row">
-      <div class="col-md-6 mt-2" *ngFor="let product of products" >
-          <div class="card" >
-              <div class="card-body">
-                  <div class="card-img-actions"> <img src="{{product?.image}}" class="card-img img-fluid" width="96" height="350" alt=""> 
-                  </div>
+    <div class="row">
+        <div class="col-md-6"> 
+            <div class="card img-fluid" style="width:500px">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2018/04/29/21/27/nature-3361174__340.jpg" alt="Card image" style="width:100%">
+            <div class="card-img-overlay">
+                <a href="#" class="btn btn-success" id="bouton">Buy Now</a><br><br>
+                <div class="card-title" style="text-align: right;"><span class="price">John Doe</span></div>
+              <div class="title"><h5 class="card-title">un texte de votre choix</h5></div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-              <div class="card-body bg-light text-center">
-                  <div class="mb-2">
-                      <h6 class="font-weight-semibold mb-2"> 
-                        <a href="#" class="text-default mb-2" data-abc="true">{{product?.cause}}</a> </h6>
-                       <p class="muted" data-abc="true">{{product?.description}}</p>
-                  </div>
-                  <div class="btn1 bg-price">
-                    <div *ngIf="product?.price">{{product?.price}}/ton</div>
-                  </div>
-                  <div>  <a  class="btn btn-success" href="#" *ngIf="product?.price">BUY Now</a> </div>
-                  
-                  <div class="text-muted mb-3">{{product?.name}}</div> 
+          </div> 
+        </div>
+        <div class="col-md-6"> 
+            <div class="card img-fluid" style="width:500px">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2018/04/29/21/27/nature-3361174__340.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-          </div>
-      </div>
-  </div>
+          </div> 
+        </div>
+    </div>
 </div>
-
