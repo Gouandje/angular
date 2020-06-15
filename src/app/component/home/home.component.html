@@ -13,10 +13,12 @@
                         <a href="#" class="text-default mb-2" data-abc="true">{{product?.cause}}</a> </h6>
                        <p class="muted" data-abc="true">{{product?.description}}</p>
                   </div>
-                  <div  class="btn1 bg-price"  *ngIf="product?.price">{{product?.price}}/ton</div>
-                  <div>  </div>
+                  <div class="btn1 bg-price">
+                    <div *ngIf="product?.price">{{product?.price}}/ton</div>
+                  </div>
+                  <div>  <a  class="btn btn-success" href="#" *ngIf="product?.price">BUY Now</a> </div>
+                  
                   <div class="text-muted mb-3">{{product?.name}}</div> 
-                  <a href="#" class="btn bg-cart" *ngIf="product?.price"><i class="fa fa-cart-plus mr-2"></i> BUY Now</a>
               </div>
           </div>
       </div>
